@@ -1,11 +1,14 @@
 #########################################
 #########################################
-### Fotos und Plots ordnen
+### Order photos and plots by date
 #########################################
 #########################################
 
 ### Name photos by date and attach a trailing counter in the name: %m_%d_xx.jpg
 ### Enables them to be displayed in a slideshow together with the plot for the same day
+
+### Set Working directory
+setwd("")
 
 ### load Packages
 load("packages.RData")
