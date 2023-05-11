@@ -1,11 +1,15 @@
 ###########################################################
 ###########################################################
-### Karten der Reise
+### Data Wrangling and Feature Engineering
+### Create vector-Linestrings from .gpx tracks,
+### get elevation for the points on the route
+### Query Location Names from first and last vertexes of
+### the Linestring
 ###########################################################
 ###########################################################
 
 ### Set Working Directory 
-setwd ("~/Dokumente/IT_Projects/Bikepacking_Maps/")
+setwd ()
 
 ### load Packages
 load("packages.RData")
