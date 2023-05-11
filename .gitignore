@@ -48,12 +48,4 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-# Data
-data/*
-
-# Plots
-plots/*
-
-# photos
-photos/*
 .Rproj.user
