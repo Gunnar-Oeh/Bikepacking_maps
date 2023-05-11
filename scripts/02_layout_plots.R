@@ -5,7 +5,7 @@
 ##############################################################
 
 ### Set Working Directory 
-setwd ("~/Dokumente/IT_Projects/Bikepacking_Maps/")
+setwd ("")
 
 ### load Packages
 load("packages.RData")
