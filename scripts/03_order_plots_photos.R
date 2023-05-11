@@ -4,34 +4,13 @@
 #########################################
 #########################################
 
-### Pakete laden
-require (ggplot2)
-require (ggrepel)
-require (plyr)
-require (reshape2)
-require (sf)
-require (rnaturalearth)
-require (maptools)
-require (tmaptools)
-require (ggspatial)
-require (stringr)
-require (revgeo)
-require (rgbif)
-require (raster)
-require (units)
-require (zoo)
-require (rosm)
-require (ggmap)
-require (gridExtra)
-require (exifr)
+### load Packages
+load("packages.RData")
+# Packages loading
+invisible(lapply(packages, library, character.only = TRUE))
 
+### Load data from the run of previous script
 load ("./data/script_5.RData")
-
-### Working Directory setzen
-setwd ("/home/gunnar/Dokumente/Reise/")
-
-rm (df_elevation, gpx_in_dem, background, europe, inset_background, i, gpx,
-    p_elev, p_inset, p_map)
 
 ### Trailing Zeros
 trail_0 <- function (num) {

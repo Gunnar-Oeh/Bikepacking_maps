@@ -4,29 +4,13 @@
 ##############################################################
 ##############################################################
 
-### load Packages
-require (ggplot2)
-require (ggrepel)
-require (plyr)
-require (reshape2)
-require (sf)
-require (rnaturalearth)
-require (maptools)
-require (tmaptools)
-require (ggspatial)
-require (stringr)
-require (revgeo)
-require (rgbif)
-require (raster)
-require (units)
-require (zoo)
-require (rosm)
-require (ggmap)
-require (gridExtra)
-require (exifr)
-
 ### Set Working Directory 
 setwd ("~/Dokumente/IT_Projects/Bikepacking_Maps/")
+
+### load Packages
+load("packages.RData")
+# Packages loading
+invisible(lapply(packages, library, character.only = TRUE))
 
 ### Load Data saved after running 01_data_wrangling_feature_engineering.R
 load ("./data/script_4.RData")
@@ -257,5 +241,7 @@ for (i in 1:length (p_map)) {
   
   rm (p1, p2, p3, add)}
 
+rm (df_elevation, gpx_in_dem, background, europe, inset_background, i, gpx,
+    p_elev, p_inset, p_map)
 ### Save Workspace
 save.image ("./data/script_5.RData")

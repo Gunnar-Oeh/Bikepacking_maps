@@ -4,29 +4,13 @@
 ###########################################################
 ###########################################################
 
-### Pakete laden
-require (ggplot2)
-require (ggrepel)
-require (plyr)
-require (reshape2)
-require (sf)
-require (rnaturalearth)
-require (maptools)
-require (tmaptools)
-require (ggspatial)
-require (stringr)
-require (revgeo)
-require (rgbif)
-require (raster)
-require (units)
-require (zoo)
-require (rosm)
-require (ggmap)
-require (gridExtra)
-require (exifr)
+### Set Working Directory 
+setwd ("~/Dokumente/IT_Projects/Bikepacking_Maps/")
 
-### Working Directory setzen
-setwd ("/home/gunnar/Dokumente/Reise/")
+### load Packages
+load("packages.RData")
+# Packages loading
+invisible(lapply(packages, library, character.only = TRUE))
 
 ### GPX data
 ### GPX Tracks were recorded during the trip daily and saved in the format %M_&D.gpx
